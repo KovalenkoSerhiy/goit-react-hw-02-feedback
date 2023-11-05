@@ -19,7 +19,7 @@ export class App extends Component {
       };
     });
   };
-  
+
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
@@ -43,10 +43,11 @@ export class App extends Component {
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
             onLeaveFeedback={this.handleOnClick}
-            
           />
         </Section>
-        <Section title="Statistics"> {this.countTotalFeedback() === 0 ? (
+        <Section title="Statistics">
+          {' '}
+          {this.countTotalFeedback() === 0 ? (
             <Notification message="There is no feedback" />
           ) : (
             <Statistics
@@ -56,7 +57,8 @@ export class App extends Component {
               totalFeedback={this.countTotalFeedback()}
               positiveFeedbackPercentage={this.countPositiveFeedbackPercentage()}
             />
-          )}</Section>
+          )}
+        </Section>
       </div>
     );
   }

@@ -10,7 +10,7 @@ export const FeedbackButton = styled.button`
   font-weight: 700;
   color: red;
   padding: 20px 20px;
-  border: 1px solid blue;
+  border: 1px solid gray;
   border-radius: 5px;
   width: 128px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
